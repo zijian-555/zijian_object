@@ -1,0 +1,19 @@
+{
+  "name": "zijian_object",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zijian-555/zijian_object.git"
+  },
+  "author": "zijian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zijian-555/zijian_object/issues"
+  },
+  "homepage": "https://github.com/zijian-555/zijian_object#readme"
+}
