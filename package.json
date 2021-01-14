@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/zijian-555/zijian_object/issues"
   },
-  "homepage": "https://github.com/zijian-555/zijian_object#readme"
+  "homepage": "https://github.com/zijian-555/zijian_object#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
 }

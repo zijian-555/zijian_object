@@ -1,0 +1,340 @@
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    #tou {
+        width: 1200px;
+        height: 94px;
+        margin: 0 auto;
+    }
+    
+    #tou ul li {
+        list-style: none;
+        float: left;
+        /* height: 10px; */
+    }
+    
+    #tou ul li a {
+        text-decoration: none;
+        color: #999999;
+        padding: 0 10px;
+        font-size: 10px;
+        line-height: 10px;
+        border-right: 1px solid #999999;
+    }
+    
+    #tou ul li:last-child a,
+    #tou ul li:first-child a {
+        border: 0;
+    }
+    
+    #tou ul li:nth-child(2) a:hover,
+    #tou ul li:nth-child(3) a:hover,
+    #tou ul li:nth-child(4) a:hover,
+    #tou ul li:nth-child(5) a:hover,
+    #tou ul li:nth-child(6) a:hover {
+        color: #f00;
+    }
+    
+    main {
+        width: 100%;
+        height: 2000px;
+        /* 此处修改 */
+        margin: 0px auto;
+    }
+    
+    .nav {
+        position: relative;
+        margin: 20px auto 0;
+        width: 1200px;
+        height: 34px;
+    }
+    
+    .nav ol {
+        position: absolute;
+        left: -52px;
+        /* color: #676767; */
+        color: #fff;
+    }
+    
+    .nav ol li {
+        list-style: none;
+        width: 112px;
+        height: 34px;
+        line-height: 32px;
+        border: 1px solid #e1e1e1;
+        float: left;
+        padding-left: 15px;
+        position: relative;
+    }
+    
+    .nav ol li img {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 6px;
+    }
+    
+    .nav ol li:hover img {
+        animation: toDown 5s ease-in-out;
+    }
+    
+    @keyframes toDown {
+        10% {
+            transform: rotate(450deg);
+        }
+        100% {
+            transform: rotate(450deg);
+        }
+    }
+    
+    .nav ul {
+        width: 700px;
+        height: 34px;
+        position: absolute;
+        left: 200px;
+    }
+    
+    .nav ul li {
+        list-style: none;
+        float: left;
+    }
+    
+    .nav ul li a {
+        padding: 10px;
+        font: 16px 'Microsoft Yahei', Tahoma, Simsun;
+        line-height: 20px;
+        font-weight: 900;
+        color: #000;
+        text-decoration: none;
+    }
+    
+    .nav ul li img {
+        margin-right: 10px;
+    }
+    
+    .nav ul li a:hover img {
+        animation: lun 0.5s ease-in-out;
+    }
+    
+    @keyframes lun {
+        100% {
+            transform: rotate(720deg);
+        }
+    }
+    
+    .nav ul li a:hover {
+        color: #459d36;
+    }
+    
+    .con div {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 20;
+        overflow: hidden;
+    }
+    
+    .con>img:nth-of-type(1) {
+        position: absolute;
+        top: 0px;
+        left: -0px;
+        z-index: 1;
+        /* display: none; */
+    }
+    
+    .con>img:nth-of-type(2) {
+        position: absolute;
+        top: 180px;
+        left: -0px;
+        z-index: 1;
+        /* display: none; */
+    }
+    
+    .con table {
+        width: 210px;
+        height: 360px;
+        background-color: rgba(252, 252, 252)
+    }
+    
+    .con td {
+        line-height: 50px;
+        padding-left: 15px;
+        border-bottom: 1px dotted rgba(221, 221, 221);
+    }
+    /* .con td a:hover td {
+        background-color: rgba(36, 141, 204);
+    }
+     */
+    
+    .con tr {
+        background: url(../img/Snipaste_sanjiao_you.png) no-repeat center right;
+    }
+    
+    #banner {
+        width: 1200px;
+        height: 360px;
+        margin: 0px auto;
+        position: relative;
+    }
+    
+    #banner .pic {
+        width: 770px;
+        position: absolute;
+        left: 230px;
+    }
+    
+    #banner #pic123 {
+        position: absolute;
+        right: 0;
+        width: 200px;
+        height: 360px;
+        background-color: #fff;
+    }
+    
+    #pic123 img {
+        float: left;
+        width: 200px;
+        height: 120px;
+    }
+    
+    #pic123 img:hover {
+        animation: toLeft 3s ease-out;
+    }
+    
+    #pic123 {
+        overflow: hidden;
+    }
+    
+    @keyframes toLeft {
+        10% {
+            transform: translateX(-12px);
+        }
+        100% {
+            transform: translateX(-12px);
+        }
+    }
+    
+    #bannersfather {
+        background-color: #c13d17;
+        width: 100%;
+        height: 359px;
+    }
+    
+    .goods {
+        width: 1172px;
+        height: 610px;
+        margin: 0px auto;
+        padding-top: 28px;
+    }
+    
+    .goods h3 {
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    
+    .goods_main {
+        width: 1200px;
+        height: 478px;
+    }
+    
+    .goods_m1 {
+        height: 478px;
+        width: 328px;
+        background-color: rgba(218, 248, 253);
+        float: left;
+    }
+    
+    .goods_m1 td {
+        font-size: 10px;
+        background-color: #fff;
+        border-radius: 8px;
+        line-height: 24px;
+        width: 98px;
+        height: 24px;
+        text-align: center;
+    }
+    
+    .good_m2 {
+        width: 860px;
+        height: 478px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .goods_m2>div>div {
+        border: 1px solid rgba(231, 231, 231);
+        overflow: hidden;
+    }
+    
+    .goods_m21 {
+        width: 866px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .goods_m211 {
+        width: 380px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .goods_m212 {
+        width: 484px;
+        height: 300px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .goods_m22 {
+        width: 866px;
+        height: 178px;
+        float: left;
+        overflow: hidden;
+    }
+    
+    .goods_m22 div {
+        float: left;
+        height: 178px;
+        width: 33.33%;
+        background-color: rgba(249, 249, 249);
+        overflow: hidden;
+    }
+    
+    .goods_m211 img:hover,
+    .goods_m212 div img:hover,
+    .goods_m22 div img:hover {
+        animation: toLeft 3s ease-out;
+    }
+    
+    .goods_foot ul li {
+        list-style: none;
+        float: left;
+    }
+    
+    .goods_foot ul {
+        margin: 0;
+        padding: 0;
+        width: 1200px;
+        height: 65px;
+    }
+    
+    .goods_foot li {
+        height: 65px;
+        width: 149px;
+        border: 1px solid rgba(231, 231, 231);
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .goods_foot li a {
+        display: block;
+        padding: 8px 0 0 0;
+    }
