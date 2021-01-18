@@ -337,3 +337,62 @@
         display: block;
         padding: 8px 0 0 0;
     }
+    
+    footer {
+        height: 620px;
+        /* width: 1920px; */
+        width: 100%;
+        background-color: #f5f5f5;
+    }
+    
+    #f_nav {
+        width: 1200px;
+        height: 180px;
+        margin: 10px auto 0;
+        background-color: #f5f5f5;
+    }
+    
+    #f_nav::after {
+        content: "";
+        display: block;
+        background-color: #e5e5e5;
+        width: 1920px;
+        height: 1px;
+        position: absolute;
+        top: 3695px;
+        left: 0;
+    }
+    
+    #f_nav div {
+        padding: 23px;
+        float: left;
+        height: 110px;
+        width: 200px;
+        font-size: 18px;
+        line-height: 62px;
+        font-weight: 700;
+    }
+    
+    #f_nav div img {
+        margin-right: 15px;
+    }
+    
+    #f_nav div:hover {
+        color: #ed4044;
+        transform: translateY(-5px);
+        transition: all .8s ease;
+    }
+    
+    #toulan {
+        width: 1200px;
+        height: 600px;
+        margin: 0px auto;
+        position: relative;
+    }
+    
+    #toulan img:nth-child(2) {
+        position: absolute;
+        top: 29px;
+        left: 8px;
+        z-index: 2;
+    }

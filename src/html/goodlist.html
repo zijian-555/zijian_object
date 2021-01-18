@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E宠商城</title>
+    <script src="../lib/jquery3.5.1.js"></script>
+    <!-- <link rel="stylesheet" href="../css/base.css"> -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/goodslist.css">
+</head>
+
+<body>
+
+
+    <head>
+        <div id="tou" class="position-relative">
+            <a href="./reg.html" style="position: absolute;top: 0;left: 1100px;font-size: 10px;line-height: 20px;margin-top: 8px; padding:0  5px; color: #999999;background-color: #eee; border-radius: 5px; border: 1px solid #28a745">[登录/注册]</a>
+            <a href="https://www.epet.com/"><img src="../img/Snipaste_logo.png" alt="" title="e宠商城" style="float: left;"></a>
+            <div class="input-group-sm mb-3" style="top:27px; right:380px; position:absolute ">
+                <input type="text" class="form-control " placeholder="比瑞吉" aria-label="Recipient's username" aria-describedby="button-addon2" style="width: 406px; height:34px; float: left;">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-success " type="button" id="button-addon2" style=" width: 73px; height:34px;">搜索</button>
+                </div>
+                <ul>
+                    <li><a href="">热门搜索：</a></li>
+                    <li><a href="https://list.epet.com/search/main.html?keyword=%E6%8B%9C%E8%80%B3&pet_type=dog&version=2.0.0&attrid=">拜耳</a></li>
+                    <li><a href="https://list.epet.com/search/main.html?keyword=%E9%BA%A6%E5%BE%B7%E6%B0%8F&pet_type=dog&version=2.0.0&attrid=">麦德氏</a></li>
+                    <li><a href="http://list.epet.com/search/main.html?keyword=%E5%86%A0%E8%83%BD&pet_type=dog&version=2.0.0&attrid=">冠能</a></li>
+                    <li><a href="https://list.epet.com/search/main.html?keyword=%E4%BC%AF%E7%BA%B3%E5%A4%A9%E7%BA%AF&pet_type=dog&version=2.0.0&attrid=">伯纳天纯</a></li>
+                    <li><a href="https://list.epet.com/search/main.html?keyword=%E7%B2%91%E7%B2%91%E6%8A%93&pet_type=dog&version=2.0.0&attrid=">粑粑抓</a></li>
+                </ul>
+            </div>
+            <div style="position: absolute; top: 30px;right: 15px; border: 1px solid #f4f4f4; border-radius: 25px; height: 40px;background-color: #fcfcfc;">
+                <a href="https://www.epet.com/cart/" style="color:#000;text-decoration: none;">
+                    <p>
+                        <img src="../img/Snipaste_gouwuche.png" alt="" title="加入购物车"> 购物车(
+                        <span id="head_cart_num" style="color: #f00;text-decoration: none;">0</span>)&nbsp;
+                    </p>
+                </a>
+            </div>
+        </div>
+    </head>
+    <main>
+        <div class="nav">
+            <div class="container" style="position:relative ">
+                <ol>
+                    <li style="padding-left:30px;background-color: #46ab50;">狗狗<img src="../img/尖角号.png" alt=""></li>
+                    <li style="background-color: #46ab50">商品分类<img src="../img/尖角号.png" alt=""></li>
+                </ol>
+                <div id="tag" style="width: 221px; height: 360px; background-color: #fff;position: absolute;bottom: -360px;left: -10px;">
+                    <div class="con" style="height:360px;width: 221px;">
+                        <img src="../img/Snipaste_dog_99by.png" alt="">
+                        <div style="background-color: #f5f5f5;">
+                            <div style="width: 70px;height: 70px;"><img src="../img/Snipaste_dog.png" alt=""></div>
+                            <p style="font-size:14px;"><span style="color: #f03e3e;">4781</span>种精选宝贝</p>
+                            <button type="button" class="btn btn-outline-secondary">正在狗狗站溜达...</button>
+                        </div>
+                        <img src="../img/Snipaste_catbaoyou.png" alt="">
+                        <div>
+                            <div style="width: 70px;height: 70px;"><img src="../img/Snipaste_cat.png" alt=""></div>
+                            <p style="font-size:14px;"><span style="color: #f03e3e;">3379</span>种精选宝贝</p>
+                            <button type="button" class="btn btn-outline-danger">进入猫猫站</button>
+                        </div>
+                    </div>
+                    <div class="con" style="height:360px;width: 221px;display: none;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <a href="https://list.epet.com/5.html">
+                                        <td>主粮</td>
+                                    </a>
+                                    <a href="https://list.epet.com/6.html">
+                                        <td>零食</td>
+                                    </a>
+                                </tr>
+                                <tr>
+                                    <a href="">
+                                        <td>窝垫</td>
+                                    </a>
+                                    <a href="">
+                                        <td>玩具</td>
+                                    </a>
+                                </tr>
+                                <tr>
+                                    <a href="">
+                                        <td>清理</td>
+                                    </a>
+                                    <a href="">
+                                        <td>保健</td>
+                                    </a>
+                                </tr>
+                                <tr>
+                                    <a href="">
+                                        <td>护理</td>
+                                    </a>
+                                    <a href="">
+                                        <td>生活</td>
+                                    </a>
+                                </tr>
+                                <tr>
+                                    <a href="">
+                                        <td>牵引</td>
+                                    </a>
+                                    <a href="">
+                                        <td>洗澡</td>
+                                    </a>
+                                </tr>
+                                <tr>
+                                    <a href="">
+                                        <td>服饰</td>
+                                    </a>
+                                    <a href="">
+                                        <td>美容</td>
+                                    </a>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">品牌特卖</a>
+                </li>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">潮牌视频</a>
+                </li>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">小剧场</a>
+                </li>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">E宠课堂</a>
+                </li>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">萌爪联盟</a>
+                </li>
+                <li>
+                    <a href=""><img src="../img/Snipaste_bone.png" alt="" class="">清仓特价</a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <div id="goodslist">
+
+    </div>
+    <footer>
+        <div id="f_nav">
+            <div><img src="../img/f1.png" alt="">正品保障</div>
+            <div><img src="../img/f2.png" alt="">品类丰富</div>
+            <div><img src="../img/f3.png" alt="">优质服务</div>
+            <div><img src="../img/f4.png" alt="">科学养宠</div>
+            <div><img src="../img/f5.png" alt="">E宠公益</div>
+            <div><img src="../img/f6.png" alt="">十年同心</div>
+        </div>
+        <div id="toulan">
+            <img src="../img/toulan.png" alt="">
+            <img src="../img/dog_phone.gif" alt="">
+        </div>
+    </footer>
+    <script src="../js/data1.js"></script>
+    <script src="../js/goodslist.js"></script>
+</body>
+
+</html>

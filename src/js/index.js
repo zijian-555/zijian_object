@@ -65,7 +65,23 @@ jQuery(function($) {
     // }
 
 
+    //进入商品列表
+    const xhr = new XMLHttpRequest();
+    xhr.onload = function() {
+        let data = xhr.responseText;
+        console.log('data=', data);
+        // result.innerHTML = data;
+    }
 
+    $('.goods_m211 img').on('click', function() {
+        window.location.assign("../html/goodlist.html")
+    })
+    $('.goods_m212 img').on('click', function() {
+        window.location.assign("../html/goodlist1.html")
+    })
+    $('.goods_m22 img').on('click', function() {
+        window.location.assign("../html/goodlist2.html")
+    })
 
 
 

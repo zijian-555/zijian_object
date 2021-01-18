@@ -33,7 +33,6 @@ jQuery(function($) {
     const xhr_reg = new XMLHttpRequest();
     xhr_reg.onload = function() {
         let data = xhr_reg.responseText;
-        console.log(`'${data}'`);
         if (data == 'success') {
             alert('注册成功');
             location.href = 'login.html';
@@ -78,10 +77,9 @@ jQuery(function($) {
     const xhr_dl = new XMLHttpRequest();
     xhr_dl.onload = function() {
         let data = xhr_dl.responseText;
-        console.log(`'${data}'`);
         if (data == 'yes') {
             alert('登录成功！');
-            location.href = 'login.html';
+            location.href = 'index.html';
         } else if (data === 'no') {
             alert('登录失败！')
         }
@@ -92,5 +90,9 @@ jQuery(function($) {
         xhr_dl.open('get', 'http://localhost:2020/api/dl.php?' + 'username=' + dl_zh + '&password=' + dl_pw, true);
         xhr_dl.send();
     });
+
+
+
+
 
 })
